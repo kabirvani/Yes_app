@@ -1,0 +1,618 @@
+select:invalid{
+    color: #9ca8ae !important;
+}
+button{
+    outline: 0;
+}
+button:focus{
+    outline: 0;
+}
+#man_image{
+    width: 300px;
+    height: 247px;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    z-index: 1;
+}
+a{
+    color: #f7a823 !important;
+}
+.clear{
+    clear: both;
+}
+input::placeholder{
+    color: #9CA8AE !important;
+}
+input.disabled{
+    background: #d8d8d8;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.btn-primary.disabled, .btn-primary:disabled{
+    background-color: grey !important;
+}
+.physical_address{
+    display: flex;
+}
+.physical_address .manual{
+    width: 196px;
+    height: 46px;
+    border-radius: 2px;
+    background-color: #2a3549;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 16px;
+}
+.physical_address .manual:hover{
+    cursor: pointer;
+}
+.physical_address_dialog .manual_address{
+    display: none;
+}
+.form-control:focus{
+    border-color: #f7a823 !important;
+    box-shadow: none !important;
+}
+.dashboard_menu{
+    width:300px;
+    height: 2100px;
+    position: fixed;
+
+    background: white;
+}
+.dashboard_menu .dashboard_menu_nav{
+    padding: 25px 17px 24px 20px;
+}
+.dashboard_menu .dashboard_menu_nav img{
+    width: 102px;
+    height: 51px;
+}
+.dashboard_menu .dashboard_menu_nav .logout_btn{
+    float: right;
+}
+.dashboard_menu .dashboard_menu_nav ul{
+    list-style: none;
+    margin-top: 3px;
+}
+
+.dashboard_menu .company_setup_progress{
+    width: 300px;
+    height: 100px;
+    background-color: #2a3549;
+}
+.dashboard_menu .company_setup_progress p{
+    width: 138px;
+    height: 42px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+}
+
+.dashboard_menu .menu .item{
+    padding-top: 12px;
+    padding-left: 13px;
+    padding-bottom: 12px;
+    height: 58px;
+    overflow: hidden;
+}
+.dashboard_menu .menu .item:hover{
+    cursor: pointer;
+}
+.dashboard_menu .menu .item.active svg path{
+    fill: #f7a823;
+}
+.dashboard_menu .menu .item svg{
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-top: 10px;
+}
+.dashboard_menu .menu .item p{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    color: #9aa8af;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 11px;
+    margin-left: 7px;
+}
+.dashboard_menu .menu .item.active p{
+    color: #000000;
+}
+.dashboard_menu .menu .item .left_bar{
+    background-color: transparent;
+    height: 58px;
+    width: 4px;
+    float: left;
+    margin-top: -12px;
+    margin-left: -13px;
+    margin-right: 20px;
+}
+.dashboard_menu .menu .item.active .left_bar{
+    background-color: #f7a823;
+}
+.dashboard_menu .menu .active{
+    background-color: rgba(247, 168, 35, 0.1);
+}
+
+#company_details{
+    height: 2100px;
+    width:100%;
+    float: left;
+    padding-top: 50px;
+    background: #f4f6f9;
+    padding-left: 480px;
+    padding-bottom: 122px;
+    padding-right: 180px;
+}
+#company_details #company_details_form{
+    min-width: 780px;
+    max-width: 780px;
+}
+#company_details>p{
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    margin-bottom: 7px;
+}
+#company_details>h6{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9aa8af;
+    margin-bottom: 56px;
+}
+
+#company_details .company_details_dialog{
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+#company_details .company_details_dialog .title{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #f7a823;
+    padding-left: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 30px;
+    border-bottom: 1px solid #e3e7eb;
+    height: 60px;
+}
+#company_details .company_details_dialog .title>div{
+    float: right;
+    display: flex;
+}
+#company_details .company_details_dialog .title label{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #9aa8af;
+    margin-left: 11px;
+    margin-top: 7px;
+
+}
+#company_details .company_details_dialog .yellow_line{
+    width: 72px;
+    height: 2px;
+    background-color: #f7a823;
+    margin-left: 30px;
+    margin-top: -2px;
+}
+#company_details .company_details_dialog .content{
+    padding: 30px 30px 44px 30px;
+}
+#company_details .company_details_dialog .content ul{
+    list-style: none;
+}
+#company_details .company_details_dialog .content .label{
+    list-style-type: disc;
+    color:#f7a823;
+}
+#company_details .company_details_dialog .content input{
+    height: 46px;
+    border-radius: 2px;
+    border: 1px solid #e3e7eb;
+    width: 100%;
+    padding: 15px 13px 13px 20px;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+#company_details .company_details_dialog .content select:hover{
+    cursor: pointer;
+}
+#company_details .company_details_dialog .content select{
+    background-image: url('/img/caret.svg');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 18px;
+    height: 46px;
+    border-radius: 2px;
+    border: 1px solid #e3e7eb;
+    width: 100%;
+    padding: 12px 13px 13px 20px;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+.bootstrap-select .dropdown-toggle:before{
+    display: none !important;
+}
+#company_details .company_details_dialog .content .dropdown.bootstrap-select button .filter-option{
+    background-image: url('/img/caret.svg');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 18px;
+}
+#company_details .company_details_dialog .content .dropdown.bootstrap-select button{
+    height: 46px;
+    border-radius: 2px;
+    border: 1px solid #e3e7eb;
+    width: 100% !important;
+    padding: 13px 13px 13px 20px;
+    color: #9ca8ae;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    background: transparent;
+}
+#company_details .company_details_dialog .content .dropdown.bootstrap-select button:focus{
+    border: 1px solid #f7a823;
+}
+.dropdown.bootstrap-select{
+    width: 100% !important;
+}
+button:focus{
+    box-shadow: none !important;
+}
+#company_details .company_details_dialog .content .dropdown.bootstrap-select.show div.dropdown-menu.show{
+    margin: 0;
+    width: 100px;
+    border-radius: 0px;
+    border: 1px solid #f7a823;
+    border-top: none;
+}
+#company_details .company_details_dialog .content .dropdown.bootstrap-select.show div.dropdown-menu.show{
+    max-height: 300px !important;
+    overflow-y: scroll !important;
+}
+#company_details .company_details_dialog .content .dropdown.bootstrap-select.show .dropdown-menu.show li{
+    height: 46px;
+}
+#company_details .company_details_dialog .content .dropdown.bootstrap-select.show .dropdown-menu.show li.active a{
+    background-color: #2a3549;
+}
+#company_details .company_details_dialog .content .dropdown.bootstrap-select.show .dropdown-menu.show li.active a span{
+    color:white;
+}
+#company_details .company_details_dialog .content .dropdown.bootstrap-select.show .dropdown-menu.show li a{
+    height: 46px;
+}
+#company_details .company_details_dialog .content .dropdown.bootstrap-select.show .dropdown-menu.show li span{
+    margin-top: 10px;
+    color: #000000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    word-wrap: break-word;
+}
+#company_details .company_details_dialog .content .item:nth-child(2n + 1){
+    margin-right: 5%;
+}
+#company_details .company_details_dialog .content .item{
+    width: 47%;
+    position: relative;
+    float: left;
+    margin: 0;
+    margin-bottom: 35px;
+}
+#company_details .company_details_dialog .content .item .caret{
+    position: absolute;
+}
+#company_details .company_details_dialog .content .item .oval img{
+    float: left;
+}
+#company_details .company_details_dialog .content .item p{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9ca8ae;
+    float: left;
+    margin-bottom: 8px;
+    margin-left: 13px;
+    margin-top: -4px;
+}
+
+#company_details .btn.btn-primary{
+    width: 110px;
+    height: 46px;
+    border-radius: 3px;
+    padding-top: 11px;
+}
+#company_details .btn.btn-primary:hover{
+    cursor: pointer;
+}
+#company_details .btn.btn-primary small{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+.company_details_back .btn.btn-primary{
+    background-color: #2a3549;
+    border: none;
+    color: white;
+}
+.company_details_save .btn.btn-primary{
+    background: transparent;
+    border: 1px solid #f7a823;
+    color: #f7a823;
+}
+.company_details_next .btn.btn-primary{
+    background-color: #f7a823;
+    border: none;
+    color: white;
+}
+
+.company_details_save{
+    float: right;
+    margin-right: 27px;
+}
+
+.company_details_next{
+    float: right;
+}
+
+.company_details_back{
+    float: left;
+}
+
+.intl-tel-input.allow-dropdown{
+    width: 100%;
+}
+
+.physical_address{
+    width: 100%;
+}
+
+p.warning_message{
+    color:red !important;
+    margin-top: 10px !important;
+    margin-left: 0px !important;
+    opacity: 0;
+}
+.dropdown.bootstrap-select.form-control{
+    height: 46px;
+}
+.intl-tel-input .selected-flag .iti-arrow{
+    opacity: 0;
+}
+.selected-dial-code{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding-right: 6px;
+}
+input[type="tel"]{
+    padding-left: 91px !important;
+}
+#beee_certificate {
+    padding: 15px 13px 13px 20px;    
+}
+#beee_certificate p{
+    font-family: Roboto !important;
+    font-size: 15px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-stretch: normal !important;
+    line-height: normal !important;
+    letter-spacing: normal !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    width: calc(100% - 35px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.dashboard_menu .item img{
+    float: right;
+    margin-right: 23px;
+    margin-top: 6px;
+}
+.dashboard_menu .company_setup_progress{
+    padding: 10px 0px 20px 10px;
+    position: relative;
+}
+.dashboard_menu .company_setup_progress p{
+    margin-left: 11px;
+    margin-top: 17px;
+}
+.dashboard_menu .company_setup_progress p#progress_text{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    position: absolute;
+    top: 19px;
+    left: 19px;
+}
+
+.dashboard_menu .company_setup_progress p#progress_text .percent{
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+}
+
+#company_details .company_details_dialog .content .item img.caret{
+    position: absolute;
+    right: 20px;
+    top: 37px;
+    z-index: 2;
+}
+
+.inactive{
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: #E3E7EB !important;
+}
+
+.clear_result{
+    font-weight: 500 !important;
+    letter-spacing: 0.4px !important;
+    text-align: center !important;
+    color: #f94539 !important;
+}
+.calc_r_div{
+    width: 48px;
+    height: 44px;
+    float: left;
+    background-color: #e3e7eb;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #9ca8ae;
+    text-align: center;
+    padding-top: 15px;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+#total_anual_revenue, #average_npat{
+    padding-left: 60px !important;
+}
+.calculate_go{
+    width: 65px;
+    height: 46px;
+    border-radius: 3px;
+    background-color: #f7a823;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    margin-top: 18px;
+    text-align: center;
+    float: left;
+    padding-top: 15px;
+}
+.calculate_go:hover{
+    cursor: pointer;
+}
+.calculate_go:active{
+    background-color: #ae6f06;
+    border-color: #ae6f06;
+}
+.yes_commitment_text{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #424e58;
+}
+.check_yes_commitment{
+    width: 100%;
+    height: 70px;
+    border-radius: 2px;
+    background-color: #f7a823;
+    position: absolute;
+    bottom: 0px;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    padding-top: 26px;
+    padding-left: 30px;
+}
