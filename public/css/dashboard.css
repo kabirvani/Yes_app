@@ -429,7 +429,7 @@ button:focus{
 
 .company_details_save{
     float: right;
-    margin-right: 27px;
+    margin-right: 0px;
 }
 
 .company_details_next{

@@ -7,8 +7,9 @@
     }
     .tbl_heading{
         color: #9aa8af;
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 600;
+        padding: 14px 18px !important;
     }
     .In-House-Youth-Uploa{
         width: 158.5px !important; */
@@ -23,12 +24,14 @@
     .table td {
         position: relative;
         font-family: Roboto;
-        font-size: 11px;
+        font-size: 15px;
         font-weight: 500;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
+        /*text-transform: capitalize;*/
+        padding: 17px 18px !important;
     }
     .table-bordered td {
         border: 1px solid #e3e7eb !important;
@@ -106,7 +109,7 @@
             <!-- <div class="card-body"> -->
               <!-- <div id="table" class="table-editable">  -->
           <div class="table-responsive">
-            <table class="table table-bordered table-responsive-md text-center" style="background-color: #fff;margin-bottom: 0px;font-family: Roboto;font-size: 11px;font-style: normal;">
+            <table class="table table-bordered table-responsive-md text-center" style="background-color: #fff;margin-bottom: 0px;font-family: Roboto;font-style: normal; table-layout: fixed; white-space: nowrap; display: block; width: 100%;">
               <tr>
                 <th class="text-center tbl_heading tbl_head_no" style="width: 20px;height: 20px;">NO</th>
                 <th class="text-center tbl_heading tbl_head_title">TITLE</th>
