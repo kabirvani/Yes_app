@@ -167,6 +167,14 @@ input.disabled{
     min-width: 780px;
     max-width: 780px;
 }
+#company_details #company_details_form.cmopny_detail_form {
+    min-width: 100%;
+    max-width: 100%;   
+}
+div#company_details.class_company-details {
+    padding-left: 350px !important;
+    padding-right: 0px !important;
+}
 #company_details>p{
     font-family: Roboto;
     font-size: 28px;
