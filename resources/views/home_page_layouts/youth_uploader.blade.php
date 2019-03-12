@@ -68,9 +68,20 @@
     .table td{
         position:relative;
     }
+    body {
+        overflow-x: hidden;
+    }
+    .company_details_next {
+        margin-right: 70px;
+        margin-bottom: 25px;
+    }
+    .col-md-5.In-House-Youth-Uploa p {
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
 </style>
 @section('content')
-<div id="company_details">
+<div id="company_details" class="class_company-details">
     <div class="row">
         <div class="col-md-5 In-House-Youth-Uploa">
             <p>In-House Youth Uploader</p>
@@ -99,7 +110,7 @@
         </div>
     </div>
         
-    <form method="POST" id="company_details_form" action="">
+    <form method="POST" id="company_details_form" action="" class="cmopny_detail_form">
         {{ csrf_field() }}
         
         <input hidden type="text" class="form-control" name="email" value="{{Auth::user()->email}}" />
