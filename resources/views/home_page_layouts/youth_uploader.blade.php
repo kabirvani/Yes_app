@@ -138,87 +138,87 @@
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='title.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'title', '{{ $data->id }}')" id='title.{{ $data->id }}'> 
                   {{ $data->title }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='first_name.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'first_name', '{{ $data->id }}')" id='first_name.{{ $data->id }}'> 
                   {{ $data->first_name }}
                 </div> 
             </td>
          <td> 
-                <div contentEditable='true' class='edit' id='last_name.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'last_name', '{{ $data->id }}')" id='last_name.{{ $data->id }}'> 
                   {{ $data->last_name }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='id_number.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'id_number', '{{ $data->id }}')" id='id_number.{{ $data->id }}'> 
                   {{ $data->id_number }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='start_date.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'start_date', '{{ $data->id }}')" id='start_date.{{ $data->id }}'> 
                   {{ $data->start_date }}
                 </div> 
             </td>
              <td> 
-                <div contentEditable='true' class='edit' id='job_title.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'job_title', '{{ $data->id }}')" id='job_title.{{ $data->id }}'> 
                   {{ $data->job_title }}
                 </div> 
             </td>
              <td> 
-                <div contentEditable='true' class='edit' id='work.address_{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'work_address', '{{ $data->id }}')" id='work.address_{{ $data->id }}'> 
                   {{ $data->work_address }}
                 </div> 
             </td>
              <td> 
-                <div contentEditable='true' class='edit' id='gender.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'gender', '{{ $data->id }}')" id='gender.{{ $data->id }}'> 
                   {{ $data->gender }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='race.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'race', '{{ $data->id }}')" id='race.{{ $data->id }}'> 
                   {{ $data->race }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='disabled.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'disabled', '{{ $data->id }}')" id='disabled.{{ $data->id }}'> 
                   {{ $data->disabled }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='employee_number.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'employee_number', '{{ $data->id }}')" id='employee_number.{{ $data->id }}'> 
                   {{ $data->employee_number }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='monthly_salary.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'monthly_salary', '{{ $data->id }}')" id='monthly_salary.{{ $data->id }}'> 
                   {{ $data->monthly_salary }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='primary_email.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'primary_email', '{{ $data->id }}')" id='primary_email.{{ $data->id }}'> 
                   {{ $data->primary_email }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='sup_first_name.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'sup_first_name', '{{ $data->id }}')" id='sup_first_name.{{ $data->id }}'> 
                   {{ $data->sup_first_name }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='sup_last_name.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'sup_last_name', '{{ $data->id }}')" id='sup_last_name.{{ $data->id }}'> 
                   {{ $data->sup_last_name }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='sup_mobile.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'sup_mobile', '{{ $data->id }}')" id='sup_mobile.{{ $data->id }}'> 
                   {{ $data->sup_mobile }}
                 </div> 
             </td>
             <td> 
-                <div contentEditable='true' class='edit' id='sup_email.{{ $data->id }}'> 
+                <div contentEditable='true' class='edit' onBlur="saveToDatabase(this, 'sup_email', '{{ $data->id }}')" id='sup_email.{{ $data->id }}'> 
                   {{ $data->sup_email }}
                 </div> 
             </td>
@@ -247,36 +247,49 @@
 
 @section('scripts')
 <script>
+
+function saveToDatabase(editableObj,field_name, edit_id) { 
+
+    $(editableObj).addClass('editMode');
+    let value = $.trim($(editableObj).text());
+    console.log(">>>>>", value, field_name)
+
+    var _token = '<?php echo csrf_token() ?>';
+
+    $.ajax({
+        url:"{!! url('save_youth_data') !!}",
+        type: 'post',
+        dataType:'json',
+        data: { field:field_name, value:value, id:edit_id ,_token:_token},
+        success:function(response) {
+            if(response.status == 'yes'){
+                $('#autosavediv').show();
+               setTimeout(function() { $("#autosavediv").hide(); }, 700);
+            }
+        }
+    });
+
+};
+
 $(document).ready(function(){
  
  // Add Class
- $('.edit').click(function(){
+$('.edit').click(function(){
   $(this).addClass('editMode');
- });
+});
 
  // Save data
- $(".edit").focusout(function(){
-  $(this).removeClass("editMode");
-  var id = this.id;
-  var split_id = id.split(".");
-  var field_name = split_id[0];
-  var edit_id = split_id[1];
-  var value = $(this).text();
- var _token= '<?php echo csrf_token() ?>';
-  $.ajax({
-   url:"{!! url('save_youth_data') !!}",
-   type: 'post',
-   dataType:'json',
-   data: { field:field_name, value:value, id:edit_id ,_token:_token},
-   success:function(response){
-    if(response.status == 'yes'){
-        $('#autosavediv').show();
-       setTimeout(function() { $("#autosavediv").hide(); }, 700);
-    }
-   }
-  });
- 
- });
+// $(".edit").focusout(function(){
+//     $(this).removeClass("editMode");
+//     var id = this.id;
+//     var split_id = id.split(".");
+//     var field_name = split_id[0];
+//     var edit_id = split_id[1];
+//     var value = $(this).text();
+//     var _token = '<?php echo csrf_token() ?>';
+    
+
+// });
 
 });
 </script>
