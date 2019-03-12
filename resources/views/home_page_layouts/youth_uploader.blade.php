@@ -79,6 +79,18 @@
         margin-bottom: 0;
         padding-top: 10px;
     }
+
+    .err-ele {
+        color: #9F6000;
+        background-color: #FEEFB3;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        font-size: 11px;
+        padding: 2px;
+        bottom: 0;
+        margin-bottom: 0px;
+    }
 </style>
 @section('content')
 <div id="company_details" class="class_company-details">
@@ -263,9 +275,19 @@ function saveToDatabase(editableObj,field_name, edit_id) {
 
     $(editableObj).addClass('editMode');
     let value = $.trim($(editableObj).text());
-    console.log(">>>>>", value, field_name)
-
     var _token = '<?php echo csrf_token() ?>';
+    field_name = $.trim(field_name);
+
+    if(field_name != 'employee_number' && field_name != 'monthly_salary' && field_name != 'primary_email') {
+        if(value == "") {
+            $(editableObj).after('<p class="err-ele">Required field.</p>');
+            return false;
+        }else{
+            $(editableObj).next('p').remove();
+        }
+        
+        console.log(">>>>>", value, field_name)
+    }
 
     $.ajax({
         url:"{!! url('save_youth_data') !!}",
